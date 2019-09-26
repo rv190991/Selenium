@@ -1,0 +1,7 @@
+<suite name="s1">
+<test name="test1">
+<classes>
+<class name="SeleniumPackage.irctc"/>
+</classes>
+</test>
+</suite>

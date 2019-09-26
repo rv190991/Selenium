@@ -1,0 +1,7 @@
+<suite name="s2">
+<test name="test2">
+<classes>
+<class name="SeleniumPackage.fb"/>
+</classes>
+</test>
+</suite>

@@ -1,0 +1,8 @@
+<suite name = "TWO CLASSES">
+	<test name = "write_read">
+		<classes>
+			<class name = "SeleniumPackage.Excel_write"/>
+			<class name = "SeleniumPackage.Excel_read"/>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Sample" duration-ms="93" started-at="2019-09-24T02:33:45Z" finished-at="2019-09-24T02:33:45Z">
+    <groups>
+    </groups>
+    <test name="Sample_test" duration-ms="93" started-at="2019-09-24T02:33:45Z" finished-at="2019-09-24T02:33:45Z">
+      <class name="SeleniumPackage.Sample">
+        <test-method status="PASS" signature="f3()[pri:0, instance:SeleniumPackage.Sample@6500df86]" name="f3" is-config="true" duration-ms="16" started-at="2019-09-24T02:33:45Z" finished-at="2019-09-24T02:33:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f3 -->
+        <test-method status="PASS" signature="userreg()[pri:1, instance:SeleniumPackage.Sample@6500df86]" name="userreg" duration-ms="0" started-at="2019-09-24T02:33:45Z" finished-at="2019-09-24T02:33:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userreg -->
+        <test-method status="PASS" signature="login()[pri:2, instance:SeleniumPackage.Sample@6500df86]" name="login" duration-ms="16" started-at="2019-09-24T02:33:45Z" finished-at="2019-09-24T02:33:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- SeleniumPackage.Sample -->
+    </test> <!-- Sample_test -->
+  </suite> <!-- Sample -->
+</testng-results>

@@ -1,0 +1,14 @@
+<suite name = "GOOGLE">
+	<test name = "google_ff_test">
+		<parameter name = "browser" value = "firefox"/>
+			<classes>
+				<class name = "SeleniumPackage.googletest"/>
+			</classes>
+	</test>
+	<test name = "google_ch_test">
+		<parameter name = "browser" value = "chrome"/>
+			<classes>
+				<class name = "SeleniumPackage.googletest"/>
+			</classes>
+	</test>
+</suite>
