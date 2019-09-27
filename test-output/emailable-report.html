@@ -7,13 +7,30 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Sample</th></tr>
-<tr><td><a href="#t0">Sample_test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">93</td><td></td><td></td></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">yahoo</th></tr>
+<tr><td><a href="#t0">tst_sanity_firefox</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">28,588</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">tst_rest_firefox</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12,672</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">41,260</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sample</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Sample_test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">SeleniumPackage.Sample</td><td><a href="#m0">login</a></td><td rowspan="1">1569292425679</td><td rowspan="1">16</td></tr><tr class="passedeven"><td><a href="#m1">userreg</a></td><td rowspan="1">1569292425664</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">yahoo</th></tr></tbody><tbody id="t0"><tr><th colspan="4">tst_sanity_firefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">yahoo_suite.SanityTest</td><td><a href="#m0">sanitytesting</a></td><td rowspan="1">1569470978898</td><td rowspan="1">28515</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">tst_rest_firefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">yahoo_suite.ReTest</td><td><a href="#m1">retesting</a></td><td rowspan="1">1569471010972</td><td rowspan="1">12665</td></tr></tbody>
 </table>
-<h2>Sample_test</h2><h3 id="m0">SeleniumPackage.Sample#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">SeleniumPackage.Sample#userreg</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>tst_sanity_firefox</h2><h3 id="m0">yahoo_suite.SanityTest#sanitytesting</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: D:\sel_dec18\testcases.xlsx (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+	at yahoo_suite.SanityTest.sanitytesting(SanityTest.java:30)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>tst_rest_firefox</h2><h3 id="m1">yahoo_suite.ReTest#retesting</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: D:\sel_dec18\testcases.xlsx (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
+	at yahoo_suite.ReTest.retesting(ReTest.java:35)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

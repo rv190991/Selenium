@@ -6,15 +6,11 @@ import java.lang.reflect.Method;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import Yahoo_Prg.Compose;
-import Yahoo_Prg.Inbox;
-import Yahoo_Prg.Login;
 import Yahoo_Prg.MainClass;
 
 public class ReTest extends MainClass
@@ -45,12 +41,13 @@ public class ReTest extends MainClass
 		  {
 			  classname=row.getCell(3).getStringCellValue();
 			  methodname=row.getCell(4).getStringCellValue();
-			  Class c =Class.forName(classname); // load the class into memory
-			  Method m=c.getMethod(methodname, null); //get the method in the class
+			  Class c = Class.forName(classname); // load the class into memory
+			  Method m= c.getMethod(methodname, null); //get the method in the class
 			  Object obj=c.newInstance(); //create instance for the class
 			  m.invoke(obj,null);  //call the method in the class
 		  }
 	  }
+	  wb.close();
 	  fin.close();
 	 /* Login l = new Login();   // hardcoded
 	  l.signup();

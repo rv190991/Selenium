@@ -20,6 +20,7 @@ public class Amazon
 		//Thread.sleep(3000);
 		F.findElement(By.xpath("//span[text()='Hello. Sign in']")).click();
 		Thread.sleep(5000);
+		System.out.println("Hello");
 		F.findElement(By.id("ap_email")).sendKeys("guruchaitanyav@gmail.com");
 		F.findElement(By.id("continue")).click();
 		F.findElement(By.id("ap_password")).sendKeys("Amazon1986@");

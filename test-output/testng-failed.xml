@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [yahoo]">
+  <test thread-count="5" name="tst_sanity_firefox(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="SeleniumPackage.irctc">
+      <class name="yahoo_suite.SanityTest">
         <methods>
-          <include name="login"/>
+          <include name="updaterport"/>
+          <include name="sanitytesting" invocation-numbers="0"/>
+          <include name="initializeReport"/>
         </methods>
-      </class> <!-- SeleniumPackage.irctc -->
+      </class> <!-- yahoo_suite.SanityTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- tst_sanity_firefox(failed) -->
+  <test thread-count="5" name="tst_rest_firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="yahoo_suite.ReTest">
+        <methods>
+          <include name="retesting" invocation-numbers="0"/>
+          <include name="updaterport"/>
+          <include name="initializeReport"/>
+        </methods>
+      </class> <!-- yahoo_suite.ReTest -->
+    </classes>
+  </test> <!-- tst_rest_firefox(failed) -->
+</suite> <!-- Failed suite [yahoo] -->
